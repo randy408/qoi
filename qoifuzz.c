@@ -36,6 +36,9 @@ SOFTWARE.
 #include <stddef.h>
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C"
+#endif
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 	int w, h;
 	if (size < 4) {
